@@ -1,6 +1,6 @@
 ------------Mode Expert-------------------
 
-4 9 13 17 21 25 29
+Valeurs à visée : 4 9 13 17 21 25 29
 
 actuel - restant pour la valeur visée = ce qu'il enlever
 
