@@ -39,25 +39,22 @@ int expert()
     int nb_allumettes = 30;
     int nb_allumettes_prises = 0;
 
-    while (nb_allumettes >= 1)
+    while (1)
     {
-        printf("Il reste %d allumettes\n", nb_allumettes);
-        while (nb_allumettes_prises < 1 || nb_allumettes_prises > 3)
-        {
-            printf("Combien d'allumettes voulez-vous prendre ? (1, 2 ou 3) : ");
-            scanf("%d", &nb_allumettes_prises);
-        }
-    
-        nb_allumettes = nb_allumettes - nb_allumettes;
-        if (nb_allumettes == 1)
-        {
-            printf("Vous avez gagné !\n");
-            break;
-        }
-        
-        
-    }
 
-    return 0;
+        printf("Il reste %d allumettes\n", nb_allumettes);
+        printf("Combien d'allumettes voulez-vous prendre ? (1, 2 ou 3) : ");
+        scanf("%d", &nb_allumettes_prises);
+                
+        if (nb_allumettes_prises >= 1 && nb_allumettes_prises <= 3) {
+            
+            nb_allumettes = nb_allumettes - nb_allumettes_prises;
+            if (nb_allumettes == 1)
+            {
+                printf("Vous avez gagné !\n");
+                break;
+            }
+        }
+    }
     
 }
